@@ -1,0 +1,89 @@
+/* Default css */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: cursive;
+    scroll-behavior: smooth;
+}
+/* Custom css */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: white;
+}
+.shadowTransparent {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxContent {
+    width: 35%;
+    min-height: 200px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #eee;
+    box-shadow: 2px 1px 15px 0px #dedede;
+}
+#headText {
+    font-size: 14px;
+    color: #000000;
+    text-align: right;
+    margin-bottom: 10px;
+    text-shadow: 2px 3px 0px #dbd5d5;
+    font-style: italic;
+    font-family: auto;
+}
+.boxContent p {
+    font-size: 19px;
+    font-family: fangsong;
+    margin: 19px 0px;
+}
+input[type="text"] {
+    width: 100%;
+    border: 1px solid #d2d2d2;
+    outline: none;
+    padding: 12px 10px;
+    border-radius: 5px;
+}
+input[type="submit"] {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: #dcdcdc;
+    color: black;
+    font-size: 19px;
+    font-family: initial;
+    padding: 10px 0px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.photo {
+    display: none;
+    width: 30%;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px dotted gainsboro;
+    object-fit: fill;
+}
+@media only screen and (max-width: 1200px) {
+    .boxContent {
+        width: 60%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .boxContent {
+        width: 75%;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .boxContent {
+        width: 90%;
+    }
+}
